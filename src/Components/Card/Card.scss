@@ -1,0 +1,16 @@
+@import "/src/css/utilities";
+
+.card{
+    position: relative;
+    z-index: 5;
+    &_container{
+        &_image{
+            &_img{
+                max-width: 100%;
+            }
+        }
+        &_button{
+            z-index:10;
+        }
+    }
+}
