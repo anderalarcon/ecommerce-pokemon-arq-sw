@@ -26,6 +26,7 @@ const Details = () => {
         description={product?.description}
         src={product?.src}
       />
+      
     </>
   );
 };

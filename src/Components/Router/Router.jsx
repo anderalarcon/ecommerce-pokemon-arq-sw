@@ -4,6 +4,7 @@ import Home from "../../Pages/Home/Home";
 import Category from "../../Pages/Category/Category";
 import Details from "../../Pages/Details/Details";
 import Error from "../../Pages/Error/Error";
+import Login from "../../Pages/Login/Login";
 const Router = () => (
   <BrowserRouter>
     <Routes>
@@ -12,6 +13,10 @@ const Router = () => (
       <Route
         path="/category/:id_category/:category/:id_product/:product"
         element={<Details />}
+      />
+      <Route
+        path="/login"
+        element={<Login />}
       />
       <Route path="*" element={<Error />} />
     </Routes>

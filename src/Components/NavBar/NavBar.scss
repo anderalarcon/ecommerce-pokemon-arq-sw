@@ -1,16 +1,31 @@
+@import "/src/css/utilities";
+
 .nav {
+  margin-bottom: 20px;
   &_container {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    height: 90px;
+    border-top: 1px solid $border;
+    border-bottom: 1px solid $border;
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 4rem;
+    height: 100px;
     justify-content: center;
     flex-wrap: wrap;
     &_link {
+      display: flex;
+      flex-direction: column;
       text-decoration: none;
       color: black;
+      align-items: center;
+      gap: 5px;
+      transition: ease-in-out 0.1s;
+      &_img {
+        width: 50px;
+        height: 50px;
+      }
+      &:hover {
+        border-bottom: 4px solid $primary;
+      }
     }
   }
 }
