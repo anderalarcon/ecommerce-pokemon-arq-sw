@@ -1,4 +1,5 @@
 @import "/src/css//utilities";
+
 .defaultform {
   margin-left: auto;
   margin-right: auto;
@@ -14,13 +15,16 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
+
     &_title {
       text-align: center;
     }
+
     &_box {
       display: flex;
       flex-direction: column;
       gap: 15px;
+
       &_input {
         padding: 5px;
         border: none;
@@ -29,6 +33,7 @@
         outline: none;
       }
     }
+
     &_buttons {
       &_btn {
         margin-top: 15px;
@@ -39,12 +44,35 @@
         width: 100%;
         cursor: pointer;
       }
+
       &_register {
         border: none;
         background-color: $white;
         color: $primary;
         text-decoration: underline;
         cursor: pointer;
+      }
+
+      &_outlook {
+        margin-top: 20px;
+        text-align: center;
+        border: 1px solid #c2c2c2;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        align-items: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        cursor: pointer;
+        &:hover{
+          background-color: #f1f1f1;
+        }
+        &_img {
+          width: 30px;
+
+        }
       }
     }
   }

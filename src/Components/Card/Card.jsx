@@ -1,7 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import "./Card.scss";
+import { useIsAuthenticated, useMsal } from "@azure/msal-react";
+
 const Card = ({ id, name, description, price, src }) => {
+  const { instance } = useMsal();
+  const isAuthenticated = useIsAuthenticated();
+  const handleAddToCart = () => {
+    console.log('Add to CART');
+  };
+  const handleAzureAD = () => {
+    instance.loginRedirect({
+      scopes: ["user.read"],
+    });
+  };
   return (
     <div className="card">
       <Link to={`${id}/${name}`} className="card_link">
@@ -15,7 +27,12 @@ const Card = ({ id, name, description, price, src }) => {
         </div>
       </Link>
       <div className="card_button">
-        <button className="card_button_btn">Agregar al Carro</button>
+        <button
+          onClick={isAuthenticated ? handleAddToCart : handleAzureAD}
+          className="card_button_btn"
+        >
+          Agregar al Carro
+        </button>
       </div>
     </div>
   );
