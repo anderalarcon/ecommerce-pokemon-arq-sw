@@ -20,8 +20,8 @@ variables:
   vmImageName: 'ubuntu-latest'
 
   # Self-hosted agent pool name
-  # agentpool: 'dockeragent_moises'
-  agentpool: 'mydockeragent'
+  agentpool: 'dockeragent_moises'
+  # agentpool: 'mydockeragent'
 
 stages:
 - stage: Build
