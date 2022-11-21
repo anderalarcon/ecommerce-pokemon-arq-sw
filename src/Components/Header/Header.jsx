@@ -50,6 +50,14 @@ const Header = () => {
             />
             Carrito
           </Link>
+          <Link to={"/products/new"} className="header_container_right_btn">
+            <img
+              className="header_container_right_btn_icon"
+              src={shopcar}
+              alt=""
+            />
+            Nuevo producto
+          </Link>
         </div>
       </div>
     </header>

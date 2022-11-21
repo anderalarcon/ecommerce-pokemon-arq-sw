@@ -6,16 +6,19 @@ import Details from "../../Pages/Details/Details";
 import Error from "../../Pages/Error/Error";
 import Login from "../../Pages/Login/Login";
 import { MsalProvider } from "@azure/msal-react";
+import NewProduct from "../../Pages/NewProduct/NewProduct";
 const Router = ({ msalInstance }) => (
   <MsalProvider instance={msalInstance}>
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/category/:id_category/:category" element={<Category />} />
+        <Route path="/category/:id_category/:category" element={<Category />} />
         <Route
           path="/category/:id_category/:category/:id_product/:product"
           element={<Details />}
         />
+        <Route path="/products/new" element={<NewProduct />} />
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<Error />} />
       </Routes>
