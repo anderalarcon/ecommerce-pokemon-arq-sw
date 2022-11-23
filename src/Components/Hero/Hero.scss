@@ -1,0 +1,52 @@
+.hero {
+    &_container {
+        max-width: 1538px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+    }
+
+}
+
+.banner {
+    &_container {
+        color: white;
+        position: absolute;
+        top: 45%;
+        left: 10%;
+
+        &_title_1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        &_title_2 {
+            font-size: 45px;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        &_title_3 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+        &_title_4 {
+            color: black;
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        &_link {
+            display: inline-block;
+            background-color: yellow;
+            padding: 1rem;
+            font-size: 20px;
+            font-weight: bold;
+
+        }
+    }
+}
+
+.swiper-button-next,.swiper-button-prev{
+    color: yellow !important;  
+}

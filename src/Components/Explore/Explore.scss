@@ -1,0 +1,28 @@
+.explore{
+    margin-top: 20px;
+    &_container{
+        display: flex;
+        flex-wrap: wrap;
+        gap:5%;
+        row-gap: 20px;
+        max-width: 1538px;
+        margin-left: auto;
+        margin-right: auto;
+        &_view{
+            width: 30%;
+            & img{
+                width: 100%;
+            }
+
+            &_category{
+                text-align: center;
+            }
+        }
+    }
+    &_title{
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 40px;
+    }
+  
+}

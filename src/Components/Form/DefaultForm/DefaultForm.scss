@@ -53,6 +53,11 @@
         cursor: pointer;
       }
 
+      &_error {
+        color: red;
+        font-weight: bold;
+      }
+
       &_outlook {
         margin-top: 20px;
         text-align: center;
@@ -66,13 +71,17 @@
         padding-top: 5px;
         padding-bottom: 5px;
         cursor: pointer;
-        &:hover{
+
+        &:hover {
           background-color: #f1f1f1;
         }
+
         &_img {
           width: 30px;
 
         }
+
+
       }
     }
   }
@@ -85,5 +94,154 @@
     z-index: -5;
     height: calc(100vh - 64.39px);
     object-fit: cover;
+  }
+}
+
+.defaultform_register {
+  height: 560px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 800px;
+  padding: 20px 40px;
+  background-color: $white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &_container {
+
+    gap: 15px;
+
+    &_title {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    &_form {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 4%;
+      row-gap: 25px;
+
+      &_box {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+
+        &_input {
+          padding: 5px;
+          border: none;
+          border-bottom: 2px solid $border;
+          box-shadow: 0px 14px 24px rgba(0, 0, 51, 0.04);
+          outline: none;
+        }
+      }
+
+      &_buttons {
+        &_btn {
+          margin-top: 15px;
+          border: none;
+          padding: 10px 30px;
+          background-color: $secondary;
+          color: $white;
+          width: 100%;
+          cursor: pointer;
+        }
+
+        &_register {
+          border: none;
+          background-color: $white;
+          color: $primary;
+          text-decoration: underline;
+          cursor: pointer;
+        }
+
+        &_error {
+          color: red;
+          font-weight: bold;
+        }
+
+        &_outlook {
+          margin-top: 20px;
+          text-align: center;
+          border: 1px solid #c2c2c2;
+          border-radius: 5px;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          gap: 10px;
+          align-items: center;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #f1f1f1;
+          }
+
+          &_img {
+            width: 30px;
+
+          }
+
+
+        }
+      }
+    }
+
+  }
+}
+
+
+.react-datepicker__input-container {
+  input {
+    width: 100%;
+  }
+}
+
+.alreadyregistered {
+  text-align: center;
+  color: red;
+
+}
+
+.success {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  &_container {
+    text-align: center;
+
+    &_img {
+      width: 70%;
+
+    }
+
+    &_text {
+      text-align: center;
+    }
+
+    &_button {
+      margin-top: 10px;
+      text-align: center;
+
+      &_btn {
+        
+        cursor: pointer;
+        background-color: orange;
+        border: none;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+      }
+    }
   }
 }

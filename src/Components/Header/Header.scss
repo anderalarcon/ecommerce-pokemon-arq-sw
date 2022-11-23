@@ -3,6 +3,11 @@
 .header{
     padding-top: 5px;
     padding-bottom: 5px;
+    &_welcome{
+        font-size: 20px;
+        color: orange;
+        font-weight: bold;
+    }
     &_container{
         align-items: center;
         display:flex;
@@ -29,6 +34,12 @@
                     height: 20px;
                 }
             }
+        }
+        &_exit{
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            border-radius: 5px;
         }
     }
 }
