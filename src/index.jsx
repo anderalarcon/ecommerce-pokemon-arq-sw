@@ -9,7 +9,9 @@ const pca = new PublicClientApplication({
     clientId: "34e15520-0905-450a-a00d-dfbef1c2feef",
     authority:
       "https://login.microsoftonline.com/1b19fa48-927a-461b-b61a-6ba2684b1846",
-    redirectUri: "http://localhost:3000",
+    // redirectUri: "http://localhost:3000",//LOCALHOST
+    redirectUri: "https://poke-ecommerce-frontend.azurewebsites.net/",//PROD
+
   },
 });
 pca.addEventCallback((event) => {
