@@ -8,7 +8,7 @@ import NavBar from "../../Components/NavBar/NavBar.jsx";
 import { productsJSON } from "../../utilities/products.js";
 import "./Category.scss";
 
-const URL_API = "http://localhost:8000/Products";
+const URL_API = "https://pokecatalogdb.azurewebsites.net/products";
 
 const Category = () => {
   const { category } = useParams();
@@ -16,7 +16,6 @@ const Category = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      // setProducts(productsJSON.filter((product) => product.category_id === id_category));
       try {
         const result = await axios.get(`${URL_API}/Category/${category}`)
         setProducts(result.data)

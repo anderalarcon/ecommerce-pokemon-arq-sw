@@ -34,7 +34,7 @@ const defaultProduct = {
     pictures: [],
 }
 
-const URL_API = "http://localhost:8000/Products"
+const URL_API = "https://pokecatalogdb.azurewebsites.net/Products"
 
 const NewProduct = () => {
 

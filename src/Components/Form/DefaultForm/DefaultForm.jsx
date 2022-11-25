@@ -8,8 +8,7 @@ import { useNavigate } from 'react-router-dom'
 import DatePicker from 'react-datepicker'
 import 'react-datepicker/dist/react-datepicker.css'
 import pikachu from '../../../assets/static/form/pikachu.webp'
-const baseURL = 'http://localhost:8081/pokeshop-backend-identidad'
-
+const baseURL = 'https://asapokebackendidentidad-pokebackendidentidad.azuremicroservices.io/prod/pokeshop-backend-identidad'
 const DefaultForm = () => {
   const [show, setShow] = useState(true)
   const [name, setName] = useState('')
