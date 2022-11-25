@@ -1,17 +1,91 @@
 @import "/src/css/utilities";
 
-.card{
+.card {
     position: relative;
     z-index: 5;
-    &_container{
-        &_image{
-            &_img{
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    width: 260px;
+    border-radius: 8px;
+    padding-bottom: 10px;
+    height: 380px;
+
+    &_container {
+        &_image {
+            // padding: 5px;
+
+            &_img {
                 max-width: 100%;
-                max-height: 300px;
+                width: 100%;
+                height: 250px;
             }
         }
-        &_button{
-            z-index:10;
+
+        &_button {
+            z-index: 10;
+            // position: absolute;
+            // bottom: 0;
+
+        }
+
+        &_price {
+            margin-top: 10px;
+            text-align: center;
+            margin-bottom: 8px;
+            &_span{
+                font-size: 14px;
+            }
+        }
+
+        &_description {
+            overflow: hidden;
+            -webkit-line-clamp: 1;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            font-family: 'Montserrat Bold';
+            font-size: 20px;
         }
     }
+}
+
+.container_bottom {
+    padding-left: 20px;
+    padding-right: 20px;
+    // border-top: 4px solid black;
+
+}
+
+.card_button {
+    // padding-left: 20px;
+    text-align: center;
+    // position: relative;
+    // display: block;
+
+    & button {
+        width: 150px;
+        display: block;
+        background-color: #f3a229;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        padding: 10px;
+        cursor: pointer;
+        position: absolute;
+        bottom: 8px;
+        left: 50%;
+        transform: translate(-50%);
+
+    }
+}
+
+.tag {
+    margin-top: 5px;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    font-size: 14px;
+    font-family: 'Montserrat-Medium';
 }

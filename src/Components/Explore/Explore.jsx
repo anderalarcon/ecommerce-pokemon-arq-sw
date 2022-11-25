@@ -13,7 +13,7 @@ const Explore = () => {
           return (
             <Link
               className='explore_container_view'
-              to={`/category/${id}/${slug}`}
+              to={`/${slug}`}
             >
               <img  className='explore_container_view_img' src={srcExplore} alt='' />
               <h1  className='explore_container_view_category'>{category}</h1>

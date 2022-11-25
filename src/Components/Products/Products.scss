@@ -5,7 +5,8 @@
     &_container{
         display: flex;
         flex-wrap: wrap;
-        gap: 5%;
+        gap: 50px;
+        row-gap: 35px;
     }
     &_title{
         margin-top: 20px;

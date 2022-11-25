@@ -12,12 +12,11 @@ const Router = ({ msalInstance }) => (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/category/:id_category/:category" element={<Category />} />
-        <Route path="/category/:id_category/:category" element={<Category />} />
+        <Route path="/:category" element={<Category />} />
         <Route
-          path="/category/:id_category/:category/:id_product/:product"
+          path="/:category/:id_product/"
           element={<Details />}
-        />
+        /> 
         <Route path="/products/new" element={<NewProduct />} />
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<Error />} />

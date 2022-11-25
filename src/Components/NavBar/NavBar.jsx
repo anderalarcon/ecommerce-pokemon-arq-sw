@@ -11,7 +11,7 @@ const NavBar = () => {
             <Link
               className="nav_container_link"
               key={id}
-              to={`/category/${id}/${slug}`}
+              to={`/${slug}`}
             >
               <img className="nav_container_link_img" src={src} alt="" />
 

@@ -8,12 +8,13 @@ import NavBar from "../../Components/NavBar/NavBar.jsx";
 import { productsJSON } from "../../utilities/products.js";
 import "./Category.scss";
 
-const URL_API = "https://pokecatalogdb.azurewebsites.net/products";
+// const URL_API = "https://pokecatalogdb.azurewebsites.net/products";
+const URL_API = 'http://localhost:8000/products';
 
 const Category = () => {
   const { category } = useParams();
   const [products, setProducts] = useState([]);
-
+  console.log(category);
   useEffect(() => {
     const fetchData = async () => {
       try {
@@ -32,7 +33,7 @@ const Category = () => {
       <NavBar />
       <div className="products container">
         <div className="products_container">
-          {products.map(({ id, name, description, price, pictures }) => (
+          {products.map(({ id, name, description, price, pictures,category }) => (
             <Card
               id={id}
               name={name}
@@ -40,6 +41,7 @@ const Category = () => {
               price={price}
               src={pictures[0]?.uri}
               key={id}
+              category={category}
             />
           ))}
         </div>
