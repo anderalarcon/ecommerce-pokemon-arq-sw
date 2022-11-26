@@ -8,9 +8,9 @@ import NavBar from '../../Components/NavBar/NavBar'
 import { productsJSON } from '../../utilities/products'
 import axios from 'axios'
 import DetailCard from '../../Components/DetailCard/DetailCard'
-// const URL_API = "https://pokecatalogdb.azurewebsites.net/products";
+const URL_API = "https://pokecatalogdb.azurewebsites.net/products";
 
-const URL_API = 'http://localhost:8000/products'
+// const URL_API = 'http://localhost:8000/products'
 
 const Details = () => {
   const { id_product } = useParams()

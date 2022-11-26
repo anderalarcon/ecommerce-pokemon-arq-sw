@@ -5,8 +5,8 @@ import './Products.scss'
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 
-// const URL_API = 'https://pokecatalogdb.azurewebsites.net/products'
-const URL_API = 'http://localhost:8000/Products'
+const URL_API = 'https://pokecatalogdb.azurewebsites.net/products'
+// const URL_API = 'http://localhost:8000/Products'
 
 const Products = () => {
 
