@@ -27,7 +27,7 @@ const Details = () => {
       }
     }
     fetchData()
-    console.log(product)
+    // console.log(product)
   }, [])
   return (
     <>
