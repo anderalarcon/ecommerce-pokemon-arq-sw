@@ -1,45 +1,55 @@
 @import "/src/css/utilities";
 
-.header{
+.header {
     padding-top: 5px;
     padding-bottom: 5px;
-    &_welcome{
+
+    &_welcome {
         font-size: 20px;
         color: orange;
         font-weight: bold;
     }
-    &_container{
+
+    &_container {
         align-items: center;
-        display:flex;
+        display: flex;
         justify-content: space-between;
-        &_left{
-            &_link{
-                &_img{
-                    width:100%
+
+        &_left {
+            &_link {
+                &_img {
+                    width: 100%
                 }
             }
         }
-        &_right{
+
+        &_right {
             display: flex;
             gap: 2rem;
-            &_btn{
+
+            &_btn {
                 border: none;
                 background-color: transparent;
                 align-items: center;
                 display: flex;
                 gap: 5px;
                 color: black;
-                &_icon{
+                font-family: "Montserrat-Bold";
+
+                &_icon {
                     width: 20px;
                     height: 20px;
                 }
             }
         }
-        &_exit{
+
+        &_exit {
             border: none;
             background-color: transparent;
             cursor: pointer;
             border-radius: 5px;
+            font-family: "Montserrat-Bold";
+            font-size: 15px;
         }
     }
 }

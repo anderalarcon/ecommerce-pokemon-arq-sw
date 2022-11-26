@@ -1,0 +1,111 @@
+.detail {
+    margin-top: 100px;
+    &_container {
+        max-width: 1536px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+
+        &_left {
+            width: 50%;
+
+            &_ctn {
+                text-align: center;
+
+                img {
+                    width: 40%;
+                }
+            }
+        }
+
+        &_right {
+            width: 50%;
+
+            &_title {
+                font-family: "Montserrat-Bold";
+                margin-top: 15px;
+                margin-bottom: 10px;
+            }
+
+            &_price {
+                font-size: 23px;
+                margin-bottom: 10px;
+            }
+
+            &_ctn {
+                display: flex;
+                // gap: 10px;
+                margin-bottom: 20px;
+                &_left {
+                    display: flex;
+                    align-items: center;
+                    border: 1px solid black;
+                    gap: 20px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    width: 100px;
+                    p {
+                        // border-top: 1px solid black;
+                        // border-bottom: 1px solid black;
+                        font-size: 20px;
+
+                    }
+
+                    &_minus {
+                        border: none;
+                        background-color: white;
+                        font-size: 20px;
+                        // border-left: 1px solid black;
+                        // border-top: 1px solid black;
+                        // border-bottom: 1px solid black;
+                        cursor: pointer;
+                    }
+
+                    &_plus {
+                        border: none;
+                        background-color: white;
+                        font-size: 20px;
+                        // border-right: 1px solid black;
+                        // border-top: 1px solid black;
+                        // border-bottom: 1px solid black;
+                        cursor: pointer;
+
+                    }
+                }
+
+                &_right {
+                    &_car {
+
+                        background-color: #6a148e;
+                        color: white;
+                        padding-left: 30px;
+                        padding-right: 30px;
+                        border: none;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        // border-radius: 5px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+        &_detail{
+            font-family: "Montserrat-Bold";
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        &_description{
+            width: 400px;
+        }
+    }
+
+}
+
+.breadscrumb {
+    color: gray;
+
+    a {
+        color: gray;
+        text-decoration: underline;
+    }
+}

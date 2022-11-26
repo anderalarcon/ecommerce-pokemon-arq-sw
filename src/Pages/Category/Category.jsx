@@ -8,8 +8,8 @@ import NavBar from "../../Components/NavBar/NavBar.jsx";
 import { productsJSON } from "../../utilities/products.js";
 import "./Category.scss";
 
-const URL_API = "https://pokecatalogdb.azurewebsites.net/products";
-// const URL_API = 'http://localhost:8000/products';
+// const URL_API = "https://pokecatalogdb.azurewebsites.net/products";
+const URL_API = 'http://localhost:8000/products';
 
 const Category = () => {
   const { category } = useParams();
@@ -42,6 +42,7 @@ const Category = () => {
               src={pictures[0]?.uri}
               key={id}
               category={category}
+              destino={'categorias'}
             />
           ))}
         </div>

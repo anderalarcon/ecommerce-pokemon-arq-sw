@@ -1,4 +1,10 @@
-import cartIcon from '../assets/static/navbar/cart.svg'
+// import cartIcon from '../assets/static/navbar/cart.svg'
+import pikachu from "../assets/static/navbar/pikachu.png"
+import psyduck from "../assets/static/navbar/psyduck.png"
+import snorlax from "../assets/static/navbar/snorlax.png"
+import meowth from "../assets/static/navbar/meowth.png"
+import eevee from "../assets/static/navbar/eevee.png"
+
 import cartas from '../assets/static/explore/cartas.jpg'
 import ropa from '../assets/static/explore/ropa.jpg'
 import videojuegos from '../assets/static/explore/videojuegos.jpg'
@@ -10,29 +16,29 @@ export const categoriesJSON = [
     id: 1,
     category: 'Cartas',
     slug: 'cards',
-    src: cartIcon,
+    src: pikachu,
     srcExplore: cartas
   },
-  { id: 2, category: 'Ropa', slug: 'clothes', src: cartIcon, srcExplore: ropa },
+  { id: 2, category: 'Ropa', slug: 'clothes', src: meowth, srcExplore: ropa },
   {
     id: 3,
     category: 'Peluches',
     slug: 'plush',
-    src: cartIcon,
+    src: eevee,
     srcExplore: peluches
   },
   {
     id: 4,
     category: 'Figuras',
     slug: 'figures',
-    src: cartIcon,
+    src: snorlax,
     srcExplore: figuras
   },
   {
     id: 5,
     category: 'Videojuegos',
     slug: 'videogames',
-    src: cartIcon,
+    src: psyduck,
     srcExplore: videojuegos
   }
 ]

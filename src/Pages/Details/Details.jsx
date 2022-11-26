@@ -7,18 +7,21 @@ import Header from '../../Components/Header/Header'
 import NavBar from '../../Components/NavBar/NavBar'
 import { productsJSON } from '../../utilities/products'
 import axios from 'axios'
-const URL_API = "https://pokecatalogdb.azurewebsites.net/products";
+import DetailCard from '../../Components/DetailCard/DetailCard'
+// const URL_API = "https://pokecatalogdb.azurewebsites.net/products";
 
-// const URL_API = 'http://localhost:8000/products'
+const URL_API = 'http://localhost:8000/products'
 
 const Details = () => {
   const { id_product } = useParams()
   const [product, setProduct] = useState({})
+  const [loading, setLoading] = useState(true)
   useEffect(() => {
     const fetchData = async () => {
       try {
         const result = await axios.get(`${URL_API}/${id_product}`)
         setProduct(result.data)
+        setLoading(false)
       } catch (err) {
         console.log(err)
       }
@@ -26,17 +29,26 @@ const Details = () => {
     fetchData()
     console.log(product)
   }, [])
-  console.log(product)
   return (
     <>
       <Header />
       <NavBar />
-      {product?.pictures && (
+      {/* {product?.pictures && (
         <Card
+          id={product?.id}
+          src={product.pictures[0]}
+          price={product?.price}
+          category={product?.category}
+        />
+      )} */}
+      {!loading && (
+        <DetailCard
           id={product?.id}
           src={product?.pictures[0]}
           price={product?.price}
           category={product?.category}
+          name={product?.name}
+          description={product?.description}
         />
       )}
     </>

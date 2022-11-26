@@ -2,6 +2,7 @@ import React from 'react'
 import { Link, Redirect } from 'react-router-dom'
 import './Card.scss'
 import { useIsAuthenticated, useMsal } from '@azure/msal-react'
+import { motion } from "framer-motion"
 
 const Card = ({ id, name, description, price, src, category,destino }) => {
   const { instance } = useMsal()
@@ -28,8 +29,9 @@ const Card = ({ id, name, description, price, src, category,destino }) => {
     return 'pink'
   }
   return (
-    <div className='card'>
-      <Link to={`${destino==='categorias'?category:category+"/"+id}`} className='card_link'>
+    <motion.div initial={{ opacity: 0 }}
+    animate={{ opacity: 1 }} className='card'>
+      <Link to={`${destino==='categorias'?"/"+category+"/"+id:category+"/"+id}`} className='card_link'>
         <div className='card_container'>
           <div className='card_container_image'>
             <img className='card_container_image_img' src={src} alt={name} />
@@ -60,7 +62,7 @@ const Card = ({ id, name, description, price, src, category,destino }) => {
           Agregar al Carro
         </button>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
